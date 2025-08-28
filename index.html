@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Price Tracker</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Crypto Price Tracker</h1>
+    </header>
+    <main>
+        <select class="coin-select">
+            <option value="" selected disabled hidden>Popular currencies</option>
+            <option value="bitcoin">Bitcoin</option>
+            <option value="ethereum">Ethereum</option>
+            <option value="tether">Tether</option>
+            <option value="binancecoin">BNB</option>
+            <option value="solana">Solana</option>
+            <option value="ripple">XRP</option>
+            <option value="usd-coin">USD Coin</option>
+            <option value="cardano">Cardano</option>
+            <option value="dogecoin">Dogecoin</option>
+            <option value="the-open-network">Toncoin</option>
+        </select>
+        <input type="text" class="cryptocurrency-input" placeholder="Crypto currency name" value="bitcoin">
+        <input type="button" class="check" value="Check Price">
+
+        <div class="card">
+            <h2 class="coin-name"></h2>
+            <img class="coin-image" src="" alt="Coin Image">
+            <h2 class="coin-price"></h2>
+        </div>
+    </main>
+    <footer>
+        <small>
+            Data from CoinGecko
+        </small>
+        <small>
+            Developer is Ronen
+        </small>
+    </footer>
+</body>
+
+</html>
