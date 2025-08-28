@@ -7,6 +7,7 @@
     <title>Crypto Price Tracker</title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://coin-images.coingecko.com/coins/images/1094/large/tron-logo.png?1696502193">
 </head>
 
 <body>
@@ -14,21 +15,23 @@
         <h1>Crypto Price Tracker</h1>
     </header>
     <main>
-        <select class="coin-select">
-            <option value="" selected disabled hidden>Popular currencies</option>
-            <option value="bitcoin">Bitcoin</option>
-            <option value="ethereum">Ethereum</option>
-            <option value="tether">Tether</option>
-            <option value="binancecoin">BNB</option>
-            <option value="solana">Solana</option>
-            <option value="ripple">XRP</option>
-            <option value="usd-coin">USD Coin</option>
-            <option value="cardano">Cardano</option>
-            <option value="dogecoin">Dogecoin</option>
-            <option value="the-open-network">Toncoin</option>
-        </select>
-        <input type="text" class="cryptocurrency-input" placeholder="Crypto currency name" value="bitcoin">
-        <input type="button" class="check" value="Check Price">
+        <form class="coin-form">
+            <select class="coin-select">
+                <option value="" selected disabled hidden>Popular currencies</option>
+                <option value="bitcoin">Bitcoin</option>
+                <option value="ethereum">Ethereum</option>
+                <option value="tether">Tether</option>
+                <option value="binancecoin">BNB</option>
+                <option value="solana">Solana</option>
+                <option value="ripple">XRP</option>
+                <option value="usd-coin">USD Coin</option>
+                <option value="cardano">Cardano</option>
+                <option value="dogecoin">Dogecoin</option>
+                <option value="the-open-network">Toncoin</option>
+            </select>
+            <input type="text" class="cryptocurrency-input" placeholder="Crypto currency name" value="bitcoin">
+            <input type="submit" class="check" value="Check Price">
+        </form>
 
         <div class="card">
             <h2 class="coin-name"></h2>
