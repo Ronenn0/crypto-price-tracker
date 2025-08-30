@@ -122,7 +122,7 @@ function addEvents() {
  * (popular currencies).
  */
 function autoCheckCurrency() {
-    if (coolDown) return;
+    if (serviceDown) return;
     const currencyName = coinSelectElement.value;
     cryptoInput.value = currencyName;
     checkPrice();
